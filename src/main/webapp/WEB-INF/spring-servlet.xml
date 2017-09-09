@@ -16,7 +16,7 @@ http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd">
     </mvc:annotation-driven>
 
     <!-- 启动包扫描功能，以便注册带有@Controller、@service、@repository、@Component等注解的类成为spring的bean -->
-    <context:component-scan base-package="cn.com.hxw.study.controller" />
+    <context:component-scan base-package="cn.com.hxw.study" />
     <!-- 对模型视图名称的解析，在请求时模型视图名称添加前后缀 -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
@@ -27,5 +27,5 @@ http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd">
     <mvc:resources location="/files/" mapping="/files/**" />
     <mvc:resources location="/scripts/" mapping="/scripts/**" />
     <mvc:resources location="/styles/" mapping="/styles/**" />
-    <mvc:resources location="/views/" mapping="/Views/**" />
+    <mvc:resources location="/views/" mapping="/views/**" />
 </beans>
