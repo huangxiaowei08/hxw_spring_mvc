@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/hxw_spring_mvc.iml" filepath="$PROJECT_DIR$/hxw_spring_mvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hxw_study.iml" filepath="$PROJECT_DIR$/.idea/modules/hxw_study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hxw_study_main.iml" filepath="$PROJECT_DIR$/.idea/modules/hxw_study_main.iml" group="hxw_study" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hxw_study_test.iml" filepath="$PROJECT_DIR$/.idea/modules/hxw_study_test.iml" group="hxw_study" />
     </modules>
   </component>
 </project>

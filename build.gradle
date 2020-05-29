@@ -1,0 +1,59 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+// 配置项目打war包，否则打出来的是jar包
+apply plugin: 'war'
+
+group = 'cn.com.hxw'
+version = '1.0-SNAPSHOT'
+
+description = """hxw_study Maven Webapp"""
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+
+
+repositories {
+        
+//     maven { url "http://repo.maven.apache.org/maven2" }
+    maven {
+        url 'http://maven.aliyun.com/nexus/content/groups/public/'
+    }
+}
+dependencies {
+    compile group: 'org.springframework', name: 'spring-test', version:'4.3.1.RELEASE'
+    compile group: 'org.springframework', name: 'spring-beans', version:'4.3.1.RELEASE'
+    compile group: 'org.springframework', name: 'spring-core', version:'4.3.1.RELEASE'
+    compile group: 'org.springframework', name: 'spring-context', version:'4.3.1.RELEASE'
+    compile group: 'org.springframework', name: 'spring-web', version:'4.3.1.RELEASE'
+    compile group: 'org.springframework', name: 'spring-webmvc', version:'4.3.1.RELEASE'
+    compile group: 'org.springframework', name: 'spring-aop', version:'4.3.1.RELEASE'
+    compile group: 'org.json', name: 'json', version:'20160212'
+//    compile group: 'net.sf.json-lib', name: 'json-lib', version:'2.4'
+    compile "net.sf.json-lib:json-lib:2.2.1:jdk15"
+    compile group: 'commons-lang', name: 'commons-lang', version:'2.6'
+    compile group: 'commons-beanutils', name: 'commons-beanutils', version:'1.8.3'
+    compile group: 'commons-collections', name: 'commons-collections', version:'3.2.1'
+    compile group: 'commons-logging', name: 'commons-logging', version:'1.2'
+    compile group: 'net.sf.ezmorph', name: 'ezmorph', version:'1.0.6'
+    compile group: 'com.alibaba', name: 'fastjson', version:'1.2.12'
+    compile group: 'com.google.code.gson', name: 'gson', version:'2.6.2'
+    compile group: 'jstl', name: 'jstl', version:'1.2'
+    compile group: 'taglibs', name: 'standard', version:'1.1.2'
+    compile group: 'mysql', name: 'mysql-connector-java', version:'8.0.11'
+    compile group: 'org.springframework', name: 'spring-jdbc', version:'4.3.10.RELEASE'
+    compile group: 'com.mchange', name: 'c3p0', version:'0.9.5.2'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.2'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.2'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-slf4j-impl', version: '2.2'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-jcl', version: '2.2'
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.10'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-web', version: '2.2'
+    compile group: 'org.aspectj', name: 'aspectjrt', version: '1.9.5'
+    compile group: 'org.aspectj', name: 'aspectjweaver', version: '1.9.5'
+    compile group: 'cglib', name: 'cglib', version: '3.3.0'
+    providedCompile group: 'javax.servlet', name: 'javax.servlet-api', version: '4.0.1'
+    providedCompile group: 'javax.servlet', name: 'servlet-api', version: '2.5'
+    testCompile group: 'junit', name: 'junit', version:'3.8.1'
+    
+}
